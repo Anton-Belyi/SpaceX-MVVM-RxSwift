@@ -11,6 +11,7 @@ target 'SpaceX-MVVM-RxSwift' do
   pod 'RxSwift'
   pod 'Moya'
   pod 'Alamofire'
+  pod 'AlamofireImage'
 
 
 end
