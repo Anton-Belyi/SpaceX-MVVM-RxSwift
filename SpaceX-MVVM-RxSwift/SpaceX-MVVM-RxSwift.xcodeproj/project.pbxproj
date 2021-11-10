@@ -16,6 +16,7 @@
 		3A6F10FA27381E3800D2F722 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F10F927381E3800D2F722 /* ViewModel.swift */; };
 		3A6F10FC2738241900D2F722 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F10FB2738241900D2F722 /* Coordinator.swift */; };
 		3A6F10FE2738935300D2F722 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F10FD2738935300D2F722 /* TableViewCell.swift */; };
+		3AA30FBF273B42A100B8411A /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA30FBE273B42A100B8411A /* Stevia */; };
 		C5DF82AB22A165D6BB730B48 /* Pods_SpaceX_MVVM_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C158910EABEACB0C4667DC7 /* Pods_SpaceX_MVVM_RxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA30FBF273B42A100B8411A /* Stevia in Frameworks */,
 				C5DF82AB22A165D6BB730B48 /* Pods_SpaceX_MVVM_RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +152,9 @@
 			dependencies = (
 			);
 			name = "SpaceX-MVVM-RxSwift";
+			packageProductDependencies = (
+				3AA30FBE273B42A100B8411A /* Stevia */,
+			);
 			productName = "SpaceX-MVVM-RxSwift";
 			productReference = 3A5B25BC2737E2F900E3D85E /* SpaceX-MVVM-RxSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -178,6 +183,9 @@
 				Base,
 			);
 			mainGroup = 3A5B25B32737E2F900E3D85E;
+			packageReferences = (
+				3AA30FBD273B42A100B8411A /* XCRemoteSwiftPackageReference "Stevia" */,
+			);
 			productRefGroup = 3A5B25BD2737E2F900E3D85E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -464,6 +472,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AA30FBD273B42A100B8411A /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AA30FBE273B42A100B8411A /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AA30FBD273B42A100B8411A /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A5B25B42737E2F900E3D85E /* Project object */;
 }

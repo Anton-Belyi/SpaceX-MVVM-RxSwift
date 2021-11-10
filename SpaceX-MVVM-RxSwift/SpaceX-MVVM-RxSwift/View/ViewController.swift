@@ -8,6 +8,7 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import Stevia
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     
@@ -56,4 +57,66 @@ extension ViewController: UITableViewDelegate {
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             return 65
         }
+}
+
+
+protocol Router {
+   func route(
+      to routeID: String,
+      from context: UIViewController,
+      parameters: Any?
+   )
+}
+
+class LoginViewController: UIViewController {
+   enum Route: String {
+      case login
+      case signUp
+      case forgotPassword
+   }
+   var viewModel: ViewModel!
+   var router: Router!
+
+   func loginButtonTapped() {
+      router.route(to: Route.login.rawValue, from: self)
+   }
+   func signUpTapped() {
+      router.route(to: Route.signUp.rawValue, from: self)
+   }
+   func forgotPasswordTapped() {
+      router.route(to: Route.forgotPassword.rawValue, from: self)
+   }
+}
+
+class LoginRouter: Router {
+   unowned var viewModel: LoginViewModel
+   init(viewModel: LoginViewModel) {
+      self.viewModel = viewModel
+   }
+   func route(
+      to routeID: String,
+      from context: UIViewController,
+      parameters: Any?)
+   {
+      guard let route = LoginVC.Route(rawValue: routeID) else {
+         return
+      }
+      switch route {
+      case .login:
+         if viewModel.shouldChangePassword {
+            // Push change-password-screen.
+         } else {
+            // Push home-screen.
+         }
+      case .signUp:
+         // Push sign-up-screen:
+         let vc = SignUpViewController()
+         let vm = SignUpViewModel()
+         vc.viewModel = vm
+         vc.router = SignUpRouter(viewModel: vm)
+         context.navigationController.push(vc, animated: true)
+      case . forgotPasswordScreen:
+         // Push forgot-password-screen.
+      }
+   }
 }
