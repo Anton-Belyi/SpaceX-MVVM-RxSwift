@@ -17,7 +17,7 @@ class Coordinator {
     }
 
     func start() {
-        let mainViewController = ViewController()
+        let mainViewController = FirstViewController()
         let navigationViewController = UINavigationController(rootViewController: mainViewController)
         navigationViewController.navigationBar.prefersLargeTitles = true
         window.rootViewController = navigationViewController

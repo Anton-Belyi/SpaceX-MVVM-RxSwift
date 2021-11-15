@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  SpaceX-MVVM-RxSwift
 //
 //  Created by Антон Белый on 07.11.2021.
@@ -10,7 +10,7 @@ import RxCocoa
 import RxSwift
 import Stevia
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class FirstViewController: UIViewController, UIScrollViewDelegate {
     
     private var tableView: UITableView!
     private let disposeBag = DisposeBag()
@@ -29,7 +29,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
 
 // MARK: Configure and bind TableViewCell
-extension ViewController {
+extension FirstViewController {
     
     private func configureTableView() {
         tableView = UITableView(frame: view.bounds, style: .plain)
@@ -52,71 +52,9 @@ extension ViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate {
+extension FirstViewController: UITableViewDelegate {
 
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             return 65
         }
-}
-
-
-protocol Router {
-   func route(
-      to routeID: String,
-      from context: UIViewController,
-      parameters: Any?
-   )
-}
-
-class LoginViewController: UIViewController {
-   enum Route: String {
-      case login
-      case signUp
-      case forgotPassword
-   }
-   var viewModel: ViewModel!
-   var router: Router!
-
-   func loginButtonTapped() {
-      router.route(to: Route.login.rawValue, from: self)
-   }
-   func signUpTapped() {
-      router.route(to: Route.signUp.rawValue, from: self)
-   }
-   func forgotPasswordTapped() {
-      router.route(to: Route.forgotPassword.rawValue, from: self)
-   }
-}
-
-class LoginRouter: Router {
-   unowned var viewModel: LoginViewModel
-   init(viewModel: LoginViewModel) {
-      self.viewModel = viewModel
-   }
-   func route(
-      to routeID: String,
-      from context: UIViewController,
-      parameters: Any?)
-   {
-      guard let route = LoginVC.Route(rawValue: routeID) else {
-         return
-      }
-      switch route {
-      case .login:
-         if viewModel.shouldChangePassword {
-            // Push change-password-screen.
-         } else {
-            // Push home-screen.
-         }
-      case .signUp:
-         // Push sign-up-screen:
-         let vc = SignUpViewController()
-         let vm = SignUpViewModel()
-         vc.viewModel = vm
-         vc.router = SignUpRouter(viewModel: vm)
-         context.navigationController.push(vc, animated: true)
-      case . forgotPasswordScreen:
-         // Push forgot-password-screen.
-      }
-   }
 }

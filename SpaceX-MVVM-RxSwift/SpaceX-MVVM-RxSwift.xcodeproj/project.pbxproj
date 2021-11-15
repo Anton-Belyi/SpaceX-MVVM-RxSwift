@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		3A5B25C02737E2F900E3D85E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5B25BF2737E2F900E3D85E /* AppDelegate.swift */; };
 		3A5B25C22737E2F900E3D85E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5B25C12737E2F900E3D85E /* SceneDelegate.swift */; };
-		3A5B25C42737E2F900E3D85E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5B25C32737E2F900E3D85E /* ViewController.swift */; };
+		3A5B25C42737E2F900E3D85E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5B25C32737E2F900E3D85E /* FirstViewController.swift */; };
 		3A5B25C92737E2FB00E3D85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5B25C82737E2FB00E3D85E /* Assets.xcassets */; };
 		3A5B25CC2737E2FB00E3D85E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5B25CA2737E2FB00E3D85E /* LaunchScreen.storyboard */; };
 		3A6F10F827381E2800D2F722 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F10F727381E2800D2F722 /* Model.swift */; };
 		3A6F10FA27381E3800D2F722 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F10F927381E3800D2F722 /* ViewModel.swift */; };
 		3A6F10FC2738241900D2F722 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F10FB2738241900D2F722 /* Coordinator.swift */; };
 		3A6F10FE2738935300D2F722 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F10FD2738935300D2F722 /* TableViewCell.swift */; };
+		3A94D8AC27400EF200E06CC3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94D8AB27400EF200E06CC3 /* SecondViewController.swift */; };
+		3A94D8AE27400F1F00E06CC3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94D8AD27400F1F00E06CC3 /* ThirdViewController.swift */; };
+		3A94D8B027400F5300E06CC3 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94D8AF27400F5300E06CC3 /* FourthViewController.swift */; };
+		3A94D8B227400F8B00E06CC3 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94D8B127400F8B00E06CC3 /* FifthViewController.swift */; };
+		3A94D8B52740118E00E06CC3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94D8B42740118E00E06CC3 /* TabBarController.swift */; };
 		3AA30FBF273B42A100B8411A /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 3AA30FBE273B42A100B8411A /* Stevia */; };
 		C5DF82AB22A165D6BB730B48 /* Pods_SpaceX_MVVM_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C158910EABEACB0C4667DC7 /* Pods_SpaceX_MVVM_RxSwift.framework */; };
 /* End PBXBuildFile section */
@@ -24,7 +29,7 @@
 		3A5B25BC2737E2F900E3D85E /* SpaceX-MVVM-RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX-MVVM-RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5B25BF2737E2F900E3D85E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5B25C12737E2F900E3D85E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A5B25C32737E2F900E3D85E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A5B25C32737E2F900E3D85E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		3A5B25C82737E2FB00E3D85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A5B25CB2737E2FB00E3D85E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A5B25CD2737E2FB00E3D85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +37,11 @@
 		3A6F10F927381E3800D2F722 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3A6F10FB2738241900D2F722 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		3A6F10FD2738935300D2F722 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3A94D8AB27400EF200E06CC3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3A94D8AD27400F1F00E06CC3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		3A94D8AF27400F5300E06CC3 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		3A94D8B127400F8B00E06CC3 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		3A94D8B42740118E00E06CC3 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4C158910EABEACB0C4667DC7 /* Pods_SpaceX_MVVM_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX_MVVM_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6641CFC2DE404A13F8A01167 /* Pods-SpaceX-MVVM-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX-MVVM-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX-MVVM-RxSwift/Pods-SpaceX-MVVM-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		D0FBAF5883EA9C1394485190 /* Pods-SpaceX-MVVM-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX-MVVM-RxSwift.release.xcconfig"; path = "Target Support Files/Pods-SpaceX-MVVM-RxSwift/Pods-SpaceX-MVVM-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +85,8 @@
 				3A6F10FB2738241900D2F722 /* Coordinator.swift */,
 				3A6F10F327381DA300D2F722 /* Model */,
 				3A6F10F527381DBA00D2F722 /* ViewModel */,
-				3A6F10F427381DB000D2F722 /* View */,
+				3A6F10F427381DB000D2F722 /* ViewController */,
+				3A94D8B327400FBE00E06CC3 /* View */,
 				3A5B25C82737E2FB00E3D85E /* Assets.xcassets */,
 				3A5B25CA2737E2FB00E3D85E /* LaunchScreen.storyboard */,
 				3A5B25CD2737E2FB00E3D85E /* Info.plist */,
@@ -91,13 +102,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3A6F10F427381DB000D2F722 /* View */ = {
+		3A6F10F427381DB000D2F722 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3A5B25C32737E2F900E3D85E /* ViewController.swift */,
-				3A6F10FD2738935300D2F722 /* TableViewCell.swift */,
+				3A94D8B42740118E00E06CC3 /* TabBarController.swift */,
+				3A5B25C32737E2F900E3D85E /* FirstViewController.swift */,
+				3A94D8AB27400EF200E06CC3 /* SecondViewController.swift */,
+				3A94D8AD27400F1F00E06CC3 /* ThirdViewController.swift */,
+				3A94D8AF27400F5300E06CC3 /* FourthViewController.swift */,
+				3A94D8B127400F8B00E06CC3 /* FifthViewController.swift */,
 			);
-			path = View;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		3A6F10F527381DBA00D2F722 /* ViewModel */ = {
@@ -115,6 +130,14 @@
 				3A5B25C12737E2F900E3D85E /* SceneDelegate.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		3A94D8B327400FBE00E06CC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F10FD2738935300D2F722 /* TableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9206BB18BFB3E3D4FFDEF66E /* Frameworks */ = {
@@ -254,11 +277,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A94D8AC27400EF200E06CC3 /* SecondViewController.swift in Sources */,
+				3A94D8AE27400F1F00E06CC3 /* ThirdViewController.swift in Sources */,
 				3A6F10FA27381E3800D2F722 /* ViewModel.swift in Sources */,
-				3A5B25C42737E2F900E3D85E /* ViewController.swift in Sources */,
+				3A94D8B227400F8B00E06CC3 /* FifthViewController.swift in Sources */,
+				3A5B25C42737E2F900E3D85E /* FirstViewController.swift in Sources */,
+				3A94D8B027400F5300E06CC3 /* FourthViewController.swift in Sources */,
 				3A6F10FC2738241900D2F722 /* Coordinator.swift in Sources */,
 				3A5B25C02737E2F900E3D85E /* AppDelegate.swift in Sources */,
 				3A5B25C22737E2F900E3D85E /* SceneDelegate.swift in Sources */,
+				3A94D8B52740118E00E06CC3 /* TabBarController.swift in Sources */,
 				3A6F10FE2738935300D2F722 /* TableViewCell.swift in Sources */,
 				3A6F10F827381E2800D2F722 /* Model.swift in Sources */,
 			);

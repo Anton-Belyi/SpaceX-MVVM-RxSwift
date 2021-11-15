@@ -20,8 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: scene)
-        coordinator = Coordinator(window: window)
-        coordinator?.start()
+        let tabBar = UITabBarController()
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
